@@ -32,4 +32,4 @@ export async function loadQuestionsForTopics(selectedTopics) {
 // Optional: alles vorladen (z. B. für „alle Themen")
 export async function preloadAll() {
   await Promise.all(Object.keys(CATEGORIES).map(loadCategory));
-}
+  }
