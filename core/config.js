@@ -6,12 +6,12 @@ export const CATEGORIES = {
   net: {
     label: "Netzwerktechnik",
     load: () => import("../data/net.js"),
-    topics: ["OSI-Modell","IP-Adressen","Subnetting","IPv6","Protokolle/Ports","DHCP","DNS","ARP","NAT/PAT","Firewall","VLAN","VPN","WLAN","ICMP/Tools","Verkabelung","MAC-Adressen"]
+    topics: ["OSI-Modell","IP-Adressen","Subnetting","IPv6","Protokolle/Ports","DHCP","DNS","ARP","NAT/PAT","Firewall","VLAN","VPN","WLAN","ICMP/Tools","Verkabelung","MAC-Adressen","Routing"]
   },
   sys: {
     label: "Hardware & Systeme",
     load: () => import("../data/sys.js"),
-    topics: ["CPU/Hardware","Arbeitsspeicher","Massenspeicher","RAID","NAS/SAN","Betriebssysteme","Virtualisierung","Cloud Computing","Serverdienste"]
+    topics: ["CPU/Hardware","Arbeitsspeicher","Massenspeicher","RAID","NAS/SAN","Betriebssysteme","Virtualisierung","Cloud Computing","Serverdienste","Linux/CLI","Container"]
   },
   sec: {
     label: "IT-Sicherheit & Recht",
@@ -51,5 +51,5 @@ export const TOPIC_TO_CAT = (() => {
 // Statische Fragenzahl pro Thema – fürs Anzeigen der Badges OHNE alle Daten zu laden.
 // (Wird einmalig generiert; bei Änderungen an den Daten neu eintragen oder per Build-Skript erzeugen.)
 export const STATIC_COUNTS = {
-  "OSI-Modell":13,"IP-Adressen":11,"Subnetting":17,"IPv6":13,"Protokolle/Ports":16,"DHCP":5,"DNS":7,"ARP":4,"NAT/PAT":4,"Firewall":4,"VLAN":5,"VPN":5,"WLAN":5,"ICMP/Tools":5,"Verkabelung":7,"MAC-Adressen":4,"CPU/Hardware":11,"Arbeitsspeicher":7,"Massenspeicher":5,"RAID":9,"NAS/SAN":4,"Betriebssysteme":15,"Virtualisierung":7,"Cloud Computing":10,"Serverdienste":6,"IT-Sicherheit":11,"Malware":7,"Angriffe":9,"Verschlüsselung":9,"DSGVO":11,"BSI-Grundschutz":6,"Backup":10,"OS-Härtung":3,"Logging":2,"Schutzbedarf":2,"ER-Modell":10,"Normalisierung":7,"SQL":21,"Pseudocode":10,"Schreibtischtest":4,"UML-Anwendungsfall":4,"UML-Klassendiagramm":5,"UML-Aktivitätsdiagramm":4,"IT-Mathe":20,"Energiekosten":6,"Handelskalkulation":7,"Nutzwertanalyse":6,"Leasing/Darlehen":6,"Kaufvertrag/Recht":7,"Projektmanagement":7,"Pflichten-/Lastenheft":5,"Netzplan/Gantt":5,"SMART":2,"4-Ohren-Modell":3,"Marktformen":3,"Schulungen":2,"QR-Code":3,"Englischer Text":7
+  "OSI-Modell":15,"IP-Adressen":13,"Subnetting":19,"IPv6":14,"Protokolle/Ports":19,"DHCP":6,"DNS":9,"ARP":4,"NAT/PAT":4,"Firewall":4,"VLAN":7,"VPN":7,"WLAN":7,"ICMP/Tools":7,"Verkabelung":7,"MAC-Adressen":4,"Routing":3,"CPU/Hardware":14,"Arbeitsspeicher":8,"Massenspeicher":8,"RAID":11,"NAS/SAN":6,"Betriebssysteme":18,"Virtualisierung":10,"Cloud Computing":13,"Serverdienste":9,"Linux/CLI":5,"Container":5,"IT-Sicherheit":13,"Malware":9,"Angriffe":12,"Verschlüsselung":11,"DSGVO":13,"BSI-Grundschutz":7,"Backup":11,"OS-Härtung":5,"Logging":4,"Schutzbedarf":3,"ER-Modell":10,"Normalisierung":7,"SQL":21,"Pseudocode":10,"Schreibtischtest":4,"UML-Anwendungsfall":4,"UML-Klassendiagramm":5,"UML-Aktivitätsdiagramm":4,"IT-Mathe":20,"Energiekosten":6,"Handelskalkulation":7,"Nutzwertanalyse":6,"Leasing/Darlehen":6,"Kaufvertrag/Recht":7,"Projektmanagement":7,"Pflichten-/Lastenheft":5,"Netzplan/Gantt":5,"SMART":2,"4-Ohren-Modell":3,"Marktformen":3,"Schulungen":2,"QR-Code":3,"Englischer Text":7
 }; // automatisch generiert via build-counts
